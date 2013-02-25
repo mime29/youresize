@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "YouResize",
+  "description": "An extension to resize Youtube videos freely.",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["jquery.js", "jqueryui.js", "fitvids.js", "youresize.js"],
+      "css": ["jquery.ui.resizable.css", "jquery.ui.theme.css"]
+    }
+  ],
+  "version": "1.0"
+}
